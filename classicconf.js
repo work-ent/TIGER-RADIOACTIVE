@@ -38,6 +38,7 @@ global.sessionName = 'Tigersession'  //Gausah Juga
 global.sp = '⭔' // Gausah Juga
 global.autoviewstatus = process.env.autoviewstatus || "TRUE"
 global.autolike = process.env.autolikestatus || "TRUE"
+global.autoread = process.env.AUTOREAD || "TRUE"
 global.wlcm = []
 global.wlcmm = []
 global.anticall = true
