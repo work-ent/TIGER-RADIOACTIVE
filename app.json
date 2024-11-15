@@ -12,8 +12,7 @@
     "autolikestatus": {
       "description": "Type true if you want bot to automatically like status updates, this will only work if AUTOVIEW_STATUS is true.",
       "required": false
-    },
-      },
+     },
       "HEROKU_API_KEY": {
         "description": "Heroku account api key, https://dashboard.heroku.com/account",
         "required": false
