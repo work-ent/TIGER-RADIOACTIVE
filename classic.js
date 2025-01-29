@@ -3354,7 +3354,7 @@ await inireact()
 > 𝑰 𝒂𝒎 𝚻𝚰𝐆𝚵𝚪 𝐑𝚫𝐃𝚰𝚯𝚫𝐂𝚻𝚰𝛁𝚵 𝐁𝐔𝐆𝐁𝐎𝐓 
 > 𝒀𝒐𝒖 𝑪𝒂𝒏 𝑮𝒆𝒕 𝑴𝒚 𝑺𝒐𝒖𝒓𝒄𝒆 𝑪𝒐𝒅𝒆 𝑽𝒊𝒂.
 ❖ https://tyrax-session-2.onrender.com/pair
-✰ `𝐁𝐎𝐓 𝐑𝐄𝐏𝐎`
+> 𝐁𝐎𝐓 𝐑𝐄𝐏𝐎
 ❖ ❴ https://github.com/Kingdragony/TIGER-RADIOACTIVE ❵ 
 > 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐀𝐍𝐍𝐄𝐋
 ❖ Channel [ https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q ].\n\n 
