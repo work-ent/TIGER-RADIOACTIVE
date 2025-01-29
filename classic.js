@@ -3117,7 +3117,7 @@ case 'ping': {
         key: pingMsg.key,
         type: 14,
         editedMessage: {
-          conversation: `*⫹⫺яα∂ιοαϲτινє⫹⫺* *${new Date() - startTime}* 𝐌/𝐒`
+          conversation: `*> (❍T҈I҈G҈E҈R҈-R҈A҈D҈I҈O҈A҈C҈T҈I҈V҈E҈❍)🖤* *${new Date() - startTime}* 𝐌/𝐒`
         }
       }
     }, {});
