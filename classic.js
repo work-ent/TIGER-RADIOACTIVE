@@ -3540,35 +3540,23 @@ zetsubo.sendImage(from, data.url, 'Success Coy', m)
 break
 //=================================================//
 case 'vv': {
-            if (isBan) return reply(mess.banned);
-            if (isBanChat) return reply(mess.bangc);
-                if (!m.quoted) return reply(`Reply to an Image/Video`)
-                if (/image/.test(mime)) {
-                    anuan = await zetsubo.downloadAndSaveMediaMessage(quoted)
-                    zetsubo.sendMessage(m.chat, {
-                        image: {
-                            url: ``
-                        },
-                        caption: `Your View once 🌚!`,
-                        fileLength: "999",
-                        viewOnce: true
-                    }, {
-                        quoted: m
-                    })
-                } else if (/video/.test(mime)) {                                                             anuanuan = await Taira.downloadAndSaveMediaMessage(quoted)
-                    zetsubo.sendMessage(m.chat, {
-                        video: {
-                            url: anuanuan
-                        },
-                        caption: `Your View once Video 🌚!`,
-                        fileLength: "99999999",
-                        viewOnce: true
-                    }, {
-                        quoted: m
-                    })
-                }
-            }
-            break;
+	if (!isCreator) return reply(mess.botowner)
+        if (!m.quoted) return reply(`Reply to a view once message`)
+        if (m.quoted.mtype !== 'viewOnceMessageV2') return reply(`Quoted message is not a view once message.`)
+    let msg = m.quoted.message
+    let type = Object.keys(msg)[0]
+    let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : 'video')
+    let buffer = Buffer.from([])
+    for await (const chunk of media) {
+        buffer = Buffer.concat([buffer, chunk])
+    }
+    if (/video/.test(type)) {
+        return Taira.sendFile(m.chat, buffer, 'media.mp4', msg[type].caption || '♱Arlodragon♡⃤ᴇ', m)
+    } else if (/image/.test(type)) {
+        return Taira.sendFile(m.chat, buffer, 'media.jpg', msg[type].caption || '꧁Arlodragon꧂ᴇ', m)
+    }
+}
+ break;
 //=================================================//
 case "tts": case "texttospeech": case "say": case "speak": {
         if (isBan) return reply(mess.banned);
